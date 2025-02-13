@@ -1,0 +1,97 @@
+/* sign up / login css) */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #191919;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  section {
+    width: 320px;
+    height: 88vh;
+    padding: 40px;
+    background-color: #1e1e1e;
+    text-align: center;
+    border: 2px solid rgb(134, 151, 187);
+    border-radius: 1em;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    background-color: #212121;
+    border: 2px solid rgb(165, 222, 229);
+    padding: 12px;
+    font-size: 1em;
+    color: #ffffff;
+    border-radius: 2em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #00b894;
+  }
+  
+  button {
+    background: none;
+    color: #b3f2f2;
+    border: 2px solid;
+    border-color: #b3f2f2;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+  
+  button:hover {
+    border-color: #00b894;
+    color: #ffffff;
+    box-shadow: 0 0.5em 0.5em -0.4em aquamarine;
+    transform: translateY(-0.15em);
+  }
+  
+  .error {
+    color: #ff6b6b;
+    font-size: 0.9em;
+    margin-bottom: -10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #b3f2f2;
+    font-size: 0.9em;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 200ms ease;
+  }
+  
+  a:hover {
+    color: #00b894;
+  }
+  

@@ -1,0 +1,43 @@
+#HOW TO RUN CODE
+
+#Make sure to setup react app then name/cd directory
+#npm create my-react-app
+#Make sure to download all requirements in package.json
+#CREATE DATABASE mycryptoapp;
+
+# psql -d mycryptoapp for database#
+
+
+#\dt view tables
+ #         List of relations
+ #Schema |   Name    | Type  | Owner  
+#--------+-----------+-------+--------
+ #public | portfolio | table | bergen
+# public | users     | table | bergen
+#(2 rows)
+#
+
+#CREATE TABLE to create tables
+#\d users
+                                          Table "public.users"
+    Column     |            Type             | Collation | Nullable |              Default              
+#---------------+-----------------------------+-----------+----------+-----------------------------------
+ #id            | integer                     |           | not null | nextval('users_id_seq'::regclass)
+ #username      | character varying(50)       |           | not null | 
+ #password_hash | character varying(255)      |           | not null | 
+ #created_at    | timestamp without time zone |           |          | CURRENT_TIMESTAMP
+#Indexes:
+
+ #Table "public.portfolio"
+ #   Column     |            Type             | Collation | Nullable |                Default                
+#---------------+-----------------------------+-----------+----------+---------------------------------------
+# id            | integer                     |           | not null | nextval('portfolio_id_seq'::regclass)
+#user_id       | integer                     |           |          | 
+ #coin_id       | character varying(50)       |           | not null | 
+ #units         | numeric(20,8)               |           | not null | 
+ #bought_price  | numeric(20,2)               |           | not null | 
+
+ 
+# node server.js start backend
+#crypto-portfolio npm start (start frontend)
+#That's it 
